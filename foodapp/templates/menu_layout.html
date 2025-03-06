@@ -1,0 +1,99 @@
+
+
+{% extends 'blank_layout.html'%}
+{%load static%}
+
+{% block content%}
+<body>
+    <div class= "container">
+<div class="row row-2">
+    <h2>What's on your mind?</h2>
+  
+</div>
+<div class="row">
+    <div class="col-4">
+       
+        <a href="{% url   'product_detail'  %}"><img src="{%static 'images/shawarma1.png'%}" alt="Shawarma" style="width: 100px; height: auto;"></a>
+        <h4>Shawarma</h4>
+        
+    </div>
+    <div class="col-4">
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/bir.png'%}"alt="Biriyani" style="width: 100px; height: auto;"></a>
+        <h4> Biriyani</h4>
+       
+    </div>
+    <div class="col-4">
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/shake.png'%}"alt="Shake" style="width: 100px; height: auto;"></a>
+        <h4>Shake</h4>
+       
+    </div>
+    <div class="col-4">
+        <div class = "col-2">
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/burger1.webp'%}"alt="Burger" style="width: 100px; height: auto;"></a>
+        <h4>Burger</h4>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <div class="col-2">
+            <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/cake.webp'%}"alt="Cake" style="width: 100px; height: auto;"></a>
+            <h4>Cake</h4>
+            
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="col-2">
+            <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/pizza1.png'%}"alt="Pizza" style="width: 100px; height: auto;"></a>
+            <h4>Pizza</h4>
+            
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="col-2">
+            <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/southi.png'%}"alt="Southindian" style="width: 100px; height: auto;"></a>
+            <h4>Southindian</h4>
+            
+        </div>
+    </div>
+    <div class="col-4">
+        <div class = "col-2">
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/idli.webp'%}"alt="Idli" style="width: 100px; height: auto;"></a>
+            <h4>Idli</h4>
+        </div>
+</div>
+<div class="row">
+    <div class="col-4">
+       <div class = "col-2">
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/tikka.png'%}"alt="Tikka" style="width: 100px; height: auto;"></a>
+        <h4>Tikka</h4>
+        </div> 
+    </div>
+    <div class="col-4">
+        <div class = "col-2">
+
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/poori.png'%}"alt="Poori" style="width: 100px; height: auto;"></a>
+        <h4>Poori</h4>
+    </div>
+</div>
+    <div class="col-4">
+        <div class = "col-2">
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/beve.jpg'%}"alt="Beverages" style="width: 100px; height: auto;"></a>
+        <h4>Beverages</h4>
+    </div>
+</div>
+    <div class="col-4">
+        <div class = "col-2">
+        <a href="{% url   'product_detail'  %}">  <img src="{%static 'images/paratha.png'%}"alt="Paratha" style="width: 100px; height: auto;"></a>
+        <h4>Paratha</h4>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+
+
+
+{% endblock content%}

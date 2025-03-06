@@ -1,0 +1,64 @@
+
+{% extends 'blank_layout.html'%}
+{%load static%}
+
+{% block content%}
+
+
+<body>
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+        <div class="row w-100">
+            <!-- Left Side: Image -->
+            <div class="col-md-6 text-center">
+                <img src="{% static 'images/delivery.webp' %}" width="80%" alt="Delivery">
+            </div>
+
+            <!-- Right Side: Login/Register Form -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="form-container text-center">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm" style="transform: translateX(300px);">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forget Password</a>
+                    </form>
+
+                    
+                    <form id="RegForm" style="display: none;">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn btn-success w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Form Toggle -->
+    <script>
+        var loginForm = document.getElementById("LoginForm");
+        var regForm = document.getElementById("RegForm");
+        var indicator = document.getElementById("Indicator");
+
+        function login() {
+            loginForm.style.display = "block";
+            regForm.style.display = "none";
+            indicator.style.transform = "translateX(0)";
+        }
+
+        function register() {
+            loginForm.style.display = "none";
+            regForm.style.display = "block";
+            indicator.style.transform = "translateX(100%)";
+        }
+    </script>
+</body>
+
+{% endblock content%}
